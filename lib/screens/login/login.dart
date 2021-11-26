@@ -29,110 +29,115 @@ class _LoginPageState extends State<LoginPage> {
     validarSesion();
     return Scaffold(
         // appBar: AppBar(
-        //   title: Text("Iniciar Sesióne"),
+        //   // title: Text("Iniciar Sesióne"),
         //   automaticallyImplyLeading: false,
         // ),
-        body: Container(
-            // Fondo de la aplicacion
-            decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage('Fondo.png'), fit: BoxFit.cover)),
-            padding: EdgeInsets.only(left: 50, right: 50),
-            child: Center(
-              child: Form(
-                key: formKey,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    // Logo
-                    Image.asset(
-                      'UNAC_Logo.png',
-                      height: 370,
-                    ),
-                    // SizedBox(height: 51),
-                    // Input de mail y contraseña
-                    obtenerCampoEmail(),
-                    SizedBox(height: 20),
-                    obtenerCampoContrasena(),
-                    // // SizedBox(
-                    // //   height: 5,
-                    // // ),
-                    // // Text(
-                    // //   "¿Olvidaste la contraseña?",
-                    // //   style: TextStyle(),
-                    // // ),
-                    // SizedBox(
-                    //   height: 5,
-                    // ),
-                    obtenerBotonIniciarSesion(),
-                    // Container(
-                    //   alignment: Alignment.center,
-                    //   child: Row(
-                    //     children: [
-                    //       Text("¿Eres nuevo?"),
-                    //       GestureDetector(
-                    //           child: Text(
-                    //             "Regístrate",
-                    //             style: TextStyle(
-                    //                 color: Colors.blue,
-                    //                 decoration: TextDecoration.underline),
-                    //           ),
-                    //           onTap: () {
-                    //             setState(() {
-                    //               AlertDialog dialog = AlertDialog(
-                    //                 title: Text(
-                    //                   'Registro de usuarios',
-                    //                 ),
-                    //                 content: Text(
-                    //                     'Todo el registro de usuarios debe ser desde la página web a la que puede acceder a continuación, esta app móvil sólo es para registro y asistencia de eventos.',
-                    //                     style: TextStyle(color: Colors.white)),
-                    //                 elevation: 24.0,
-                    //                 backgroundColor: Colors.red,
-                    //                 titleTextStyle: TextStyle(
-                    //                     fontWeight: FontWeight.bold,
-                    //                     color: Colors.white,
-                    //                     fontSize: 15),
-                    //                 actions: [
-                    //                   TextButton(
-                    //                       onPressed: () {
-                    //                         Clipboard.setData(new ClipboardData(
-                    //                                 text: 'www.google.com'))
-                    //                             .then((_) {
-                    //                           ScaffoldMessenger.of(context)
-                    //                               .showSnackBar(SnackBar(
-                    //                                   content: Text(
-                    //                                       "Copiado al portapepeles!",
-                    //                                       style: TextStyle(
-                    //                                           color: Colors
-                    //                                               .white))));
-                    //                         });
-                    //                       },
-                    //                       child: Text("Copiar dirección web")),
-                    //                   TextButton(
-                    //                       onPressed: () {
-                    //                         Navigator.pop(context);
-                    //                       },
-                    //                       child: Text("Salir",
-                    //                           style: TextStyle(
-                    //                               color: Colors.white
-                    //                                   .withOpacity(0.6)))),
-                    //                 ],
-                    //               );
+        body: ListView(
+          children: [
+            Container(
+                // Fondo de la aplicacion
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage('./assets/Fondo.png'), fit: BoxFit.cover)),
+                padding: EdgeInsets.only(left: 50, right: 50),
+                child: Center(
+                  child: Form(
+                    key: formKey,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        // Logo
+                        Image.asset(
+                          './assets/UNAC_Logo.png',
+                          // height: 370,
+                          height: 320,
+                        ),
+                        // SizedBox(height: 51),
+                        // Input de mail y contraseña
+                        obtenerCampoEmail(),
+                        SizedBox(height: 20),
+                        obtenerCampoContrasena(),
+                        // // SizedBox(
+                        // //   height: 5,
+                        // // ),
+                        // // Text(
+                        // //   "¿Olvidaste la contraseña?",
+                        // //   style: TextStyle(),
+                        // // ),
+                        // SizedBox(
+                        //   height: 5,
+                        // ),
+                        obtenerBotonIniciarSesion(),
+                        // Container(
+                        //   alignment: Alignment.center,
+                        //   child: Row(
+                        //     children: [
+                        //       Text("¿Eres nuevo?"),
+                        //       GestureDetector(
+                        //           child: Text(
+                        //             "Regístrate",
+                        //             style: TextStyle(
+                        //                 color: Colors.blue,
+                        //                 decoration: TextDecoration.underline),
+                        //           ),
+                        //           onTap: () {
+                        //             setState(() {
+                        //               AlertDialog dialog = AlertDialog(
+                        //                 title: Text(
+                        //                   'Registro de usuarios',
+                        //                 ),
+                        //                 content: Text(
+                        //                     'Todo el registro de usuarios debe ser desde la página web a la que puede acceder a continuación, esta app móvil sólo es para registro y asistencia de eventos.',
+                        //                     style: TextStyle(color: Colors.white)),
+                        //                 elevation: 24.0,
+                        //                 backgroundColor: Colors.red,
+                        //                 titleTextStyle: TextStyle(
+                        //                     fontWeight: FontWeight.bold,
+                        //                     color: Colors.white,
+                        //                     fontSize: 15),
+                        //                 actions: [
+                        //                   TextButton(
+                        //                       onPressed: () {
+                        //                         Clipboard.setData(new ClipboardData(
+                        //                                 text: 'www.google.com'))
+                        //                             .then((_) {
+                        //                           ScaffoldMessenger.of(context)
+                        //                               .showSnackBar(SnackBar(
+                        //                                   content: Text(
+                        //                                       "Copiado al portapepeles!",
+                        //                                       style: TextStyle(
+                        //                                           color: Colors
+                        //                                               .white))));
+                        //                         });
+                        //                       },
+                        //                       child: Text("Copiar dirección web")),
+                        //                   TextButton(
+                        //                       onPressed: () {
+                        //                         Navigator.pop(context);
+                        //                       },
+                        //                       child: Text("Salir",
+                        //                           style: TextStyle(
+                        //                               color: Colors.white
+                        //                                   .withOpacity(0.6)))),
+                        //                 ],
+                        //               );
 
-                    //               showDialog(
-                    //                   context: context,
-                    //                   builder: (BuildContext context) {
-                    //                     return dialog;
-                    //                   });
-                    //             });
-                    //           })
-                    //     ],
-                    //   ),
-                    // )
-                  ],
-                ),
-              ),
-            ))
+                        //               showDialog(
+                        //                   context: context,
+                        //                   builder: (BuildContext context) {
+                        //                     return dialog;
+                        //                   });
+                        //             });
+                        //           })
+                        //     ],
+                        //   ),
+                        // )
+                      ],
+                    ),
+                  ),
+                )),
+          ],
+        )
 
         // body: Container(
         //   // Fondo de la aplicacion
@@ -304,8 +309,14 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   void validarToken(String email, String contrasena) async {
+    //     AuthProvider ap = AuthProvider();
+    // AuthResponse ar =
+    //     await ap.obtenerToken(emailIngresado, contrasenaIngresada);
+
+
     AuthProvider ap = AuthProvider();
-    AuthResponse ar = await ap.obtenerToken('admin@localhost.com', '12345678');
+    AuthResponse ar = 
+    await ap.obtenerToken('admin@localhost.com', '12345678');
     // await ap.obtenerToken(emailIngresado, contrasenaIngresada);
 
     print(ar.message);

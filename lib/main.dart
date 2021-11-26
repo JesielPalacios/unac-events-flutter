@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       providers: [ChangeNotifierProvider(create: (_) => new UiProvider())],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'QR Reader',
+        title: 'Taller Vehicular',
         initialRoute: '/login',
         routes: {
           // 'home': (_) => HomePage(),

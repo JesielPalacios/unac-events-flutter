@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 class AuthProvider {
   Future<AuthResponse> obtenerToken(String email, String password) async {
     // var url = Uri.parse("http://10.0.2.2:8282/api/usuario/login");
-    var url = Uri.parse("http://localhost:4000/api/auth/login");
+    var url = Uri.parse("http://192.168.1.72:4000/api/auth/login");
 
     var responseHttp =
         await http.post(url, body: {'correo': email, 'contrasena': password});

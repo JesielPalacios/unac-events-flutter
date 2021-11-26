@@ -5,7 +5,7 @@ import 'package:taller_vehicular/screens/inicio/models/event_type_model.dart';
 import 'package:taller_vehicular/screens/inicio/models/events_model.dart';
 
 List<DateModel> getDates() {
-  List<DateModel> dates = new List<DateModel>();
+  List<DateModel> dates = <DateModel>[];
   DateModel dateModel = new DateModel();
 
   //1
@@ -96,48 +96,48 @@ List<DateModel> getDates() {
 }
 
 List<EventTypeModel> getEventTypes() {
-  List<EventTypeModel> events = new List();
+  List<EventTypeModel> events = [];
   EventTypeModel eventModel = new EventTypeModel();
 
   //1
-  eventModel.imgAssetPath = "assets/baseline_addchart_white_48dp.png";
+  eventModel.imgAssetPath = "./assets/baseline_addchart_white_48dp.png";
   eventModel.eventType = "Big Data";
   events.add(eventModel);
   eventModel = new EventTypeModel();
 
   //1
   eventModel.imgAssetPath =
-      "assets/baseline_precision_manufacturing_white_48dp.png";
+      "./assets/baseline_precision_manufacturing_white_48dp.png";
   eventModel.eventType = "Block Chain";
   events.add(eventModel);
   eventModel = new EventTypeModel();
 
   //1
-  eventModel.imgAssetPath = "assets/baseline_psychology_white_48dp.png";
+  eventModel.imgAssetPath = "./assets/baseline_psychology_white_48dp.png";
   eventModel.eventType = "Machine Learning";
   events.add(eventModel);
   eventModel = new EventTypeModel();
 
   //1
-  eventModel.imgAssetPath = "assets/baseline_sports_soccer_white_48dp.png";
+  eventModel.imgAssetPath = "./assets/baseline_sports_soccer_white_48dp.png";
   eventModel.eventType = "Data Analitics";
   events.add(eventModel);
   eventModel = new EventTypeModel();
 
   //1
-  eventModel.imgAssetPath = "assets/sports.png";
+  eventModel.imgAssetPath = "./assets/sports.png";
   eventModel.eventType = "Sports";
   events.add(eventModel);
   eventModel = new EventTypeModel();
 
   //1
-  eventModel.imgAssetPath = "assets/concert.png";
+  eventModel.imgAssetPath = "./assets/concert.png";
   eventModel.eventType = "Industry";
   events.add(eventModel);
   eventModel = new EventTypeModel();
 
   //1
-  eventModel.imgAssetPath = "assets/education.png";
+  eventModel.imgAssetPath = "./assets/education.png";
   eventModel.eventType = "Education";
   events.add(eventModel);
   eventModel = new EventTypeModel();
@@ -146,11 +146,11 @@ List<EventTypeModel> getEventTypes() {
 }
 
 List<EventsModel> getEvents() {
-  List<EventsModel> events = new List<EventsModel>();
+  List<EventsModel> events = <EventsModel>[];
   EventsModel eventsModel = new EventsModel();
 
   //1
-  eventsModel.imgeAssetPath = "assets/tileimg.png";
+  eventsModel.imgeAssetPath = "./assets/tileimg.png";
   eventsModel.date = "Nov 5, 2021";
   eventsModel.desc = "Inteligencia social y Ciber Seguridad";
   eventsModel.address = "Sala Interamericana.";
@@ -158,7 +158,7 @@ List<EventsModel> getEvents() {
   eventsModel = new EventsModel();
 
   //2
-  eventsModel.imgeAssetPath = "assets/second.png";
+  eventsModel.imgeAssetPath = "./assets/second.png";
   eventsModel.date = "Nov 7, 2021";
   eventsModel.desc = "Tensorflow js para principiantes.";
   eventsModel.address = "LDS Sal 406 4rtop P.";
@@ -166,7 +166,7 @@ List<EventsModel> getEvents() {
   eventsModel = new EventsModel();
 
   //3
-  eventsModel.imgeAssetPath = "assets/music_event.png";
+  eventsModel.imgeAssetPath = "./assets/music_event.png";
   eventsModel.date = "Non 12, 2021";
   eventsModel.desc = "Dataware House y lagos de datos";
   eventsModel.address = "Edif. Central Chapman.";
@@ -174,7 +174,7 @@ List<EventsModel> getEvents() {
   eventsModel = new EventsModel();
 
   //1
-  eventsModel.imgeAssetPath = "assets/tileimg.png";
+  eventsModel.imgeAssetPath = "./assets/tileimg.png";
   eventsModel.date = "Nov 5, 2021";
   eventsModel.desc = "Inteligencia social y Ciber Seguridad";
   eventsModel.address = "Sala Interamericana.";
@@ -182,7 +182,7 @@ List<EventsModel> getEvents() {
   eventsModel = new EventsModel();
 
   //2
-  eventsModel.imgeAssetPath = "assets/second.png";
+  eventsModel.imgeAssetPath = "./assets/second.png";
   eventsModel.date = "Nov 7, 2021";
   eventsModel.desc = "Tensorflow js para principiantes.";
   eventsModel.address = "LDS Sal 406 4rto Piso.";
@@ -190,7 +190,7 @@ List<EventsModel> getEvents() {
   eventsModel = new EventsModel();
 
   //3
-  eventsModel.imgeAssetPath = "assets/music_event.png";
+  eventsModel.imgeAssetPath = "./assets/music_event.png";
   eventsModel.date = "Non 12, 2021";
   eventsModel.desc = "Dataware House y lagos de datos";
   eventsModel.address = "Auditorio G.W Chapman";
