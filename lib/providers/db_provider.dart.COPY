@@ -1,0 +1,56 @@
+import 'dart:io';
+
+import 'package:path/path.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:sqflite/sqflite.dart';
+
+class DBProvider {
+  // static Database _database;
+  // Database? database;
+  static Database? _database;
+  // Lo siguiente es un contructor privado. Es muy normal ver
+  // singletons con su constructor privado de esta manera.
+  // static final DBProvider db = DBProvider._Private();
+  static final DBProvider db = DBProvider._();
+  DBProvider._();
+
+  // Future<Database> get database async {
+  //   if (_database != null) return _database;
+
+  //   _database = await initDB();
+
+  //   return _database;
+  // }
+
+  get database async {
+    if (_database != null) return _database;
+
+    _database = await initDB();
+
+    return _database;
+  }
+
+  // Future<Database> initDB() async {
+  initDB() async {
+    // Path de donde almacenaremos la base de datos
+    Directory documentsDirectory = await getApplicationDocumentsDirectory();
+    // Algo parecido a esto: 182973279-12345678912-/documentsDirectory
+    // El join sirve para unir pedazos de path, es decir, para construir todo
+    // el url donde está nuestra base de datos.
+    final path = join(documentsDirectory.path, 'ScansDB.db');
+    print(path);
+
+    // Crear base de datos
+    // return await openDatabase(
+    _database = await openDatabase(path, version: 1, onOpen: (db) {},
+        onCreate: (Database db, int version) async {
+      await db.execute('''
+          CREATE TABLE Scans(
+          id INTEGER PRIMARY KEY,
+          tipo TEXT,
+          valor TEXT
+        )
+        ''');
+    });
+  }
+}
