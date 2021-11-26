@@ -59,7 +59,7 @@ class CommonDrawer {
               Icon(
                 Icons.settings_applications,
               ),
-              "perfil",
+              "Perfil",
               EstructuraPerfil.ruta,
               contexto),
           info,

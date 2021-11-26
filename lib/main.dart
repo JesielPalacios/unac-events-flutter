@@ -28,9 +28,9 @@ class MyApp extends StatelessWidget {
           LoginPage.ruta: (BuildContext context) => LoginPage(),
         },
         theme: ThemeData(
-            primaryColor: Colors.deepPurple,
+            primaryColor: Colors.indigo.shade800,
             floatingActionButtonTheme: FloatingActionButtonThemeData(
-                backgroundColor: Colors.deepPurple)),
+                backgroundColor: Colors.indigo.shade800)),
       ),
     );
   }
