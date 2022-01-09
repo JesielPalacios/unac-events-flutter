@@ -1,6 +1,11 @@
-# taller_vehicular
+# UNAC EVENTS (FLUTTER CLIENT)
 
-Mobile App for Taller Vehicular.
+<!-- # taller_vehicular -->
+
+Mobile App for UNAC EVENTS (An app developed for bring the events of the engineer faculty of the Colombia Adventist University Corporation (Corporacion Universitaria Adventista) (UNAC)
+)).
+
+<!-- Mobile App for Taller Vehicular. -->
 
 A new Flutter project.
 
