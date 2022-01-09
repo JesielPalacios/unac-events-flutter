@@ -5,6 +5,8 @@
 Mobile App for UNAC EVENTS (An app developed for bring the events of the engineer faculty of the Colombia Adventist University Corporation (Corporacion Universitaria Adventista) (UNAC)
 )).
 
+DEV TEAM: Jesiel Palacios, Anthony Romero
+
 <!-- Mobile App for Taller Vehicular. -->
 
 A new Flutter project.
